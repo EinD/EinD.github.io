@@ -1,0 +1,9 @@
+## bundler
+/.bundle/*
+
+## jekyll
+/_site/*
+
+.Rproj.user
+.Rhistory
+.RData
