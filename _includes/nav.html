@@ -1,0 +1,22 @@
+<header class="navbar">
+    <div class="container">
+        <nav class="site-nav">
+            <ul>
+        {% for nav in site.data.nav %}
+            {% if include.active == nav.title %}
+                <li class="current">
+            {% else %}
+                <li>
+            {% endif %}
+                 {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+                  <a href="{{ nav.url }}">{{ nav.title }}</a>
+                 {% else %}
+                  <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.title }}</a>
+                 {% endif %}
+                </li>
+        {% endfor %}
+            </ul>
+        </nav>
+        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo@2x.png" class="logo" alt="EinD"></a>
+    </div>
+</header>

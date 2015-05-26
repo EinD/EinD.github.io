@@ -1,0 +1,27 @@
+highlighter: pygments
+permalink: pretty
+markdown: redcarpet
+
+title: EinD
+description: "Engineering in Development"
+
+news:
+    name: EinD Newsletter
+    authors: EinD Community
+    url: http://EinD.io/news
+    feed: /news.xml
+
+url: "http://EinD.github.io"
+
+gems:
+    - jekyll-redirect-from
+    - jekyll-mentions
+
+exclude:
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - vendor/
+    - sponsor-generator/
